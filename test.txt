@@ -1,2 +1,2 @@
-I'm new to git and new
+1. I'm new to git and new
 
