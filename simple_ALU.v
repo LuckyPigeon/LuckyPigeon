@@ -1,3 +1,5 @@
+// Still working on the OR and AND operation
+
 module SimpleALU(
 output reg [3:0] Result,
 output reg C_out,

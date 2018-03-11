@@ -1,6 +1,6 @@
 #! /usr/bin/python3
 # -*- coding: utf-8 -*-
-# A kkbox downloader
+# A KKBOX Downloader
 from urllib.request import urlopen
 from urllib.error import HTTPError
 from urllib.error import URLError
