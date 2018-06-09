@@ -1,4 +1,5 @@
-import os, sys, cairosvg
+import os, sys
+from cairosvg import svg2png
 from wordcloud import WordCloud
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -78,14 +79,13 @@ def Downloads():
 	driver.find_element_by_id('download-svg').click()
 
 # Convert svg to png
+def SVG2PNG(imgin, imgout):
+	svg2png(url = imgin, write_to = imgout)
 '''
 def get_input():
 	return 
 '''
 def main():
-
-	convert_url = 'https://cloudconvert.com/'
-
 	driver.get(url)
 
 	text = ['wordcloud.txt']
