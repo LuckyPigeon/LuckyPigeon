@@ -1,9 +1,20 @@
-import os, sys
+import os, sys, argparse
 from cairosvg import svg2png
 from wordcloud import WordCloud
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 # Can add argparse in the future
+parser = argparse.ArgumentParser(description = 'Get optional wordcloud effect')
+
+parser.add_argument('-t', '--text-path', action = 'store', type = str, help = 'File path of your text file')
+parser.add_argument('-f', '--font', action = 'store', type = str, help = 'Font of your text')
+parser.add_argument('-sp', '--spiral', action = 'store', type = int, help = 'Spiral of wordcloud, 0 for Archimedean, 1 for Rectangular')
+parser.add_argument('-sc', '--scale', action = 'store', type = int, help = 'Scale of wordcloud, 0 for log n, 1 for sqrt n, 2 for n')
+parser.add_argument('-a', '--angle', action = 'store', type = int, help = 'The step of each word\'s angle for wordcloud')
+parser.add_argument('-af', '--angle-from', action = 'store', type = int, help = 'The start interval of step of angle')
+parser.add_argument('-ae', '--angle-end', action = 'store', type = int, help = 'The end interval of step of angle')
+args =parser.parse_args()
+
 '''
 text = "Chief Justice Roberts, President Carter, President Clinton, President \
         Bush, President Obama, fellow Americans, and people of the world: \
@@ -81,10 +92,9 @@ def Downloads():
 # Convert svg to png
 def SVG2PNG(imgin, imgout):
 	svg2png(url = imgin, write_to = imgout)
-'''
-def get_input():
+
 	return 
-'''
+
 def main():
 	driver.get(url)
 
@@ -94,6 +104,6 @@ def main():
 	angle_from = -60
 	angle_to = 60
 	spiral = 0
-	# text, font, angle, angle_from, angle_to = get_input() # With argparse
+	text, font, angle, angle_from, angle_to, spiral, scale = get_input() # With argparse
 
 	driver.quit()
