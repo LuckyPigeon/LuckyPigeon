@@ -1,0 +1,11 @@
+
+How to work?
+step 1. run SMAC_encding.c 
+step 2. run SMAC_decding.c
+
+*****************************
+Why the size of decoded file is different that of the original file?
+Ans: First, you need to check your OS!! Some OS could add a few bytes behind the file. 
+
+
+Ps icg = Group of Information Coding

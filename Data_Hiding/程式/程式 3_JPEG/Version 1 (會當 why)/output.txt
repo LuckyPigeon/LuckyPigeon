@@ -1,0 +1,92 @@
+-|- File thinks its size is: 7037 bytes
+APP0 Chunk ('txt' information) skipping
+> DQT marker
+> SOF marker
+Size:200x200 nr_components:3 (YCbCr)  precision:8
+Component:1  factor:1x1  Quantization table:0
+Component:2  factor:1x1  Quantization table:1
+Component:3  factor:1x1  Quantization table:1
+> DHT marker (length=416)
+Huffman table DC n0
+Length of the table: 12
+Huffman table AC n0
+Length of the table: 162
+Huffman table DC n1
+Length of the table: 12
+Huffman table AC n1
+Length of the table: 162
+< DHT marker
+> SOS marker
+ComponentId:1  tableAC:0 tableDC:0
+ComponentId:2  tableAC:1 tableDC:1
+ComponentId:3  tableAC:1 tableDC:1
+Decoding JPEG image...
+
+Huff Block:
+
+
+#Extracted DCT values from SOS#
+ 126     0     0     0     0     0     0     0  
+   0     0     0     0     0     0     0     0  
+   0     0     0     0     0     0     0     0  
+   0     0     0     0     0     0     0     0  
+   0     0     0     0     0     0     0     0  
+   0     0     0     0     0     0     0     0  
+   0     0     0     0     0     0     0     0  
+   0     0     0     0     0     0     0     0  
+
+# Decoded 8x8 Block#
+fd fd fd fd fd fd fd fd 
+fd fd fd fd fd fd fd fd 
+fd fd fd fd fd fd fd fd 
+fd fd fd fd fd fd fd fd 
+fd fd fd fd fd fd fd fd 
+fd fd fd fd fd fd fd fd 
+fd fd fd fd fd fd fd fd 
+fd fd fd fd fd fd fd fd 
+
+Huff Block:
+
+
+#Extracted DCT values from SOS#
+   0     0     0     0     0     0     0     0  
+   0     0     0     0     0     0     0     0  
+   0     0     0     0     0     0     0     0  
+   0     0     0     0     0     0     0     0  
+   0     0     0     0     0     0     0     0  
+   0     0     0     0     0     0     0     0  
+   0     0     0     0     0     0     0     0  
+   0     0     0     0     0     0     0     0  
+
+# Decoded 8x8 Block#
+80 80 80 80 80 80 80 80 
+80 80 80 80 80 80 80 80 
+80 80 80 80 80 80 80 80 
+80 80 80 80 80 80 80 80 
+80 80 80 80 80 80 80 80 
+80 80 80 80 80 80 80 80 
+80 80 80 80 80 80 80 80 
+80 80 80 80 80 80 80 80 
+
+Huff Block:
+
+
+#Extracted DCT values from SOS#
+   0     0     0     0     0     0     0     0  
+   0     0     0     0     0     0     0     0  
+   0     0     0     0     0     0     0     0  
+   0     0     0     0     0     0     0     0  
+   0     0     0     0     0     0     0     0  
+   0     0     0     0     0     0     0     0  
+   0     0     0     0     0     0     0     0  
+   0     0     0     0     0     0     0     0  
+
+# Decoded 8x8 Block#
+80 80 80 80 80 80 80 80 
+80 80 80 80 80 80 80 80 
+80 80 80 80 80 80 80 80 
+80 80 80 80 80 80 80 80 
+80 80 80 80 80 80 80 80 
+80 80 80 80 80 80 80 80 
+80 80 80 80 80 80 80 80 
+80 80 80 80 80 80 80 80 

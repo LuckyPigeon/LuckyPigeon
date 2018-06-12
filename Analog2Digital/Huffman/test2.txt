@@ -1,0 +1,13 @@
+void printTree1(Node *tree){
+    if (tree->letter<127)
+        printf("letter=%d\n",tree->letter);
+    }
+    return;
+}
+
+void printTree1(Node *tree){
+    if (tree->letter<127)
+        printf("letter=%d\n",tree->letter);
+    }
+    return;
+}
