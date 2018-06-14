@@ -20,11 +20,11 @@
 
 
 void inst_func_simulation(char* inst){
-	if(DATAPATH_TYPE!=3)
-		int	i, j, k; 
+	// if(DATAPATH_TYPE!=3)
+	int	i, j, k; 
 	char *OP; 
 	long r_d, r_s, r_t, C, shamt;
-	char	reg_dest[32];
+	char reg_dest[32];
 
 	/* instruction: ADD $1, $2, $3 */
 	char tmp[128];
@@ -47,10 +47,7 @@ void inst_func_simulation(char* inst){
 				sim_cycles += 4;
 				break;
 			case PIPELINE:
-				if(sim_cycles == 0)
-					sim_cycles = 4;
-				else
-					sim_cycles++;
+				sim_cycles += sim_cycles == 0 ? 4 : 1;
 				break;
 		}
 		return;
@@ -64,13 +61,13 @@ void inst_func_simulation(char* inst){
 		switch(DATAPATH_TYPE)
 		{
 			case SINGLE:
-		
+				sim_cycles++;
 				break;
 			case MULTI:
-			
+				sim_cycles += 4;
 				break;
 			case PIPELINE:
-
+				sim_cycles += sim_cycles == 0 ? 4 : 1;
 				break;
 		}
 		return;
@@ -85,13 +82,13 @@ void inst_func_simulation(char* inst){
 		switch(DATAPATH_TYPE)
 		{
 			case SINGLE:
-
+				sim_cycles++;
 				break;
 			case MULTI:
-		
+				sim_cycles += 4;
 				break;
 			case PIPELINE:
-
+				sim_cycles += sim_cycles == 0 ? 4 : 1;
 				break;
 		}
 		return;
@@ -105,13 +102,13 @@ void inst_func_simulation(char* inst){
 		switch(DATAPATH_TYPE)
 		{
 			case SINGLE:
-
+				sim_cycles++;
 				break;
 			case MULTI:
-
+				sim_cycles += 4;
 				break;
 			case PIPELINE:
-
+				sim_cycles += sim_cycles == 0 ? 4 : 1;
 				break;
 		}
 		return;
@@ -125,13 +122,13 @@ void inst_func_simulation(char* inst){
 		switch(DATAPATH_TYPE)
 		{
 			case SINGLE:
-	
+				sim_cycles++;
 				break;
 			case MULTI:
-			
+				sim_cycles += 4;
 				break;
 			case PIPELINE:
-
+				sim_cycles += sim_cycles == 0 ? 4 : 1;
 				break;
 		}
 		return;
@@ -145,13 +142,13 @@ void inst_func_simulation(char* inst){
 		switch(DATAPATH_TYPE)
 		{
 			case SINGLE:
-		
+				sim_cycles++;
 				break;
 			case MULTI:
-		
+				sim_cycles += 4;
 				break;
 			case PIPELINE:
-	
+				sim_cycles += sim_cycles == 0 ? 4 : 1;
 				break;
 		}
 		return;
@@ -166,13 +163,13 @@ void inst_func_simulation(char* inst){
 		switch(DATAPATH_TYPE)
 		{
 			case SINGLE:
-
+				sim_cycles++;
 				break;
 			case MULTI:
-
+				sim_cycles += 5;
 				break;
 			case PIPELINE:
-
+				sim_cycles += sim_cycles == 0 ? 5 : 1;
 				break;
 		}
 		return;
@@ -186,13 +183,13 @@ void inst_func_simulation(char* inst){
 		switch(DATAPATH_TYPE)
 		{
 			case SINGLE:
-
+				sim_cycles++;
 				break;
 			case MULTI:
-	
+				sim_cycles += 4;
 				break;
 			case PIPELINE:
-	
+				sim_cycles += sim_cycles == 0 ? 4 : 1;
 				break;
 		}
 		return;
@@ -205,13 +202,13 @@ void inst_func_simulation(char* inst){
 		switch(DATAPATH_TYPE)
 		{
 			case SINGLE:
-
+				sim_cycles++;
 				break;
 			case MULTI:
-	
+				sim_cycles += 4;
 				break;
 			case PIPELINE:
-	
+				sim_cycles += sim_cycles == 0 ? 4 : 1;
 				break;
 		}
 		return;
@@ -225,20 +222,18 @@ void inst_func_simulation(char* inst){
 		switch(DATAPATH_TYPE)
 		{
 			case SINGLE:
-
+				sim_cycles++;
 				break;
 			case MULTI:
-
+				sim_cycles += 3;
 				break;
 			case PIPELINE:
-
+				sim_cycles += sim_cycles == 0 ? 3 : 1;
 				break;
 		}
 		return;
 	}
 
-
-}
 	else
 	{
 		reg_update();

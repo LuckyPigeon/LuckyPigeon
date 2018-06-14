@@ -1,6 +1,6 @@
 CC = gcc
 LD = gcc
-CFLAGS = -g -lm
+CFLAGS = -w -g -lm
 LDFLAGS =
 RM = rm -f
 PROG = NCNU_CPU_SIM
@@ -14,7 +14,7 @@ all: $(PROG)
 
 # rule to link the program
 $(PROG): $(OBJS)
-	$(LD) $(LDFLAGS) -g -lm $(OBJS) -o $(PROG)
+	$(LD) $(LDFLAGS) -w -g -lm $(OBJS) -o $(PROG)
 
 # eve: what is this?
 .c.o:
