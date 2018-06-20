@@ -1,6 +1,6 @@
-CPU cycle time:	0 ps
-Datapath type:	Pipeline 
-Total # of CPU cycles:	9 
+CPU cycle time:	100 ps
+Datapath type:	Multi-Cycle Datapath 
+Total # of CPU cycles:	25 
 Instruction Memory Contents: 
 Mem_Addr	Label	Instruction 
 0		Start		SUB	$3, $3, $1
