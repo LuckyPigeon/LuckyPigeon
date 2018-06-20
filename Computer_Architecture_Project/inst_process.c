@@ -157,8 +157,8 @@ void inst_func_simulation(char* inst){
 
 	if(strcmp(OP, "LW") == 0)
 	{
-		sscanf(operands, "$%ld, %ld, $%ld", &r_d, C, &r_s);
-		reg(r_d) = mem(C) + reg(r_s);
+		sscanf(operands, "$%ld, %ld($%ld)", &r_d, &C, &r_s);
+		reg(r_d) = mem(C + reg(r_s));
 
 		switch(DATAPATH_TYPE)
 		{
@@ -177,8 +177,9 @@ void inst_func_simulation(char* inst){
 
 	if(strcmp(OP, "SW") == 0)
 	{
-		sscanf(operands, "$%ld, %ld, $%ld", &r_d, C, &r_s);
-		reg(r_s) = reg(r_d);
+		sscanf(operands, "$%ld, %ld($%ld)", &r_d, &C, &r_s);
+		r_s = C + reg(r_s);
+		mem(r_s) = reg(r_d);
 
 		switch(DATAPATH_TYPE)
 		{
