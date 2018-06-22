@@ -41,7 +41,6 @@ void inst_decode(void)
 	char reg_dest[128];
 	if (pipeline_next_stage_null(IDEX) == true)
 	{			
-		
 		clear_pipeline_register_content(&IFID);
 	}
 	return;
@@ -50,20 +49,32 @@ void inst_execute(void)
 {
 	//HOMEWORK
 	/*將結果算出*/
+	long r_d, r_s, r_t, C, shamt;
+	char reg_dest[128];
+	if (pipeline_next_stage_null(EXMEM) == true)
+	{
+		clear_pipeline_register_content(&IDEX);
+	}
 
-		 return;
+	return;
 }
 void mem_writeback(void)
 {
 	//HOMEWORK
 	/*將data寫入memory*/
-		 return;
+	long r_d, r_s, r_t, C, shamt;
+	char reg_dest[128];
+	if (pipeline_next_stage_null(MEMWB) == true)
+	{
+		clear_pipeline_register_content(&EXMEM);
+	}
+	return;
 }
 void reg_update(void)
 {
 	//HOMEWORK
 	/*將修改後的資料寫回register*/
-		return;
+	return;
 }
 void flush_pipeline(void)
 {
