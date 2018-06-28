@@ -24,60 +24,88 @@ void inst_fetch(char* inst)
 		strcpy(tmp, inst);
 		OP = strtok(tmp, "\t"); 
 		char* operands = OP + strlen(OP) + 1;
+
 		if (strcmp(operands, "") == 0)
 			return;
+
 		strcpy(IFID.op, OP);
 		strcpy(IFID.inst, operands);
 		printf("OP: %s operands: %s\n", OP, operands);
 		PC += 4;
 		
 	}
+
 	return;
 }
+
 void inst_decode(void)
 {
 	/*拿到register資料如果是branch instruction會在這階段算出結果*/
 	long r_d, r_s, r_t, C, shamt;
 	char reg_dest[128];
+
 	if (pipeline_next_stage_null(IDEX) == true)
 	{			
 		clear_pipeline_register_content(&IFID);
 	}
+
 	return;
 }
+
 void inst_execute(void)
 {
 	//HOMEWORK
 	/*將結果算出*/
+	/*
 	long r_d, r_s, r_t, C, shamt;
 	char reg_dest[128];
+
 	if (pipeline_next_stage_null(EXMEM) == true)
 	{
 		clear_pipeline_register_content(&IDEX);
 	}
-
+*/
 	return;
 }
 void mem_writeback(void)
 {
 	//HOMEWORK
 	/*將data寫入memory*/
+	/*
 	long r_d, r_s, r_t, C, shamt;
 	char reg_dest[128];
+
 	if (pipeline_next_stage_null(MEMWB) == true)
 	{
 		clear_pipeline_register_content(&EXMEM);
-	}
+	}*/
+
 	return;
 }
 void reg_update(void)
 {
 	//HOMEWORK
-	/*將修改後的資料寫回register*/
+	/*將修改後的資料寫回register*//*
+	long r_d, r_s, r_t, C, shamt;
+	char reg_dest[128];
+
+	if (pipeline_next_stage_null(MEMWB) == true)
+	{
+		clear_pipeline_register_content(&MEMWB);
+	}
+*/
 	return;
 }
 void flush_pipeline(void)
 {
+	long r_d, r_s, r_t, C, shamt;
+	char reg_dest[128];
+/*
+	clear_pipeline_register_content(&IFID);
+	clear_pipeline_register_content(&IDEX);
+	clear_pipeline_register_content(&EXMEM);
+	clear_pipeline_register_content(&MEMWB);
+*/
 	return;
 }
 bool if_hazard(void)   //HOMEWORK

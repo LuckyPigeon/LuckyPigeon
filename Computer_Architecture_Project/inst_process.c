@@ -216,10 +216,13 @@ void inst_func_simulation(char* inst){
 	}
 
 
-	if(strcmp(OP, "BEQ") == 0)
+	if(strcmp(OP, "BEQ") == 0 || strcmp(OP, "BNE") == 0)
 	{
 		sscanf(operands, "$%ld, $%ld, %ld", &r_s, &r_t, &shamt);
-		if(reg(r_s) == reg(r_t)) PC += shamt << 2;
+		if(reg(r_s) == reg(r_t) && shamt > 0) PC += shamt << 2;
+		if(reg(r_s) == reg(r_t) && shamt < 0) PC -= abs(shamt);
+		// sscanf(operands, "$%ld, $%ld, %s", &r_s, &r_t, reg_dest);
+
 		switch(DATAPATH_TYPE)
 		{
 			case SINGLE:
