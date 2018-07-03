@@ -21,18 +21,21 @@
 
 void inst_func_simulation(char* inst){
 	// if(DATAPATH_TYPE!=3)
-	int	i, j, k; 
+	int	i, j, k, x, counter = 0; 
 	char *OP; 
 	long r_d, r_s, r_t, C, shamt;
-	char reg_dest[32];
+	char reg_dest[32], temp[1000][32];
 
 	/* instruction: ADD $1, $2, $3 */
 	char tmp[128];
 	strcpy(tmp, inst);
 	OP = strtok(tmp, "\t"); 
 	char* operands = OP + strlen(OP) + 1;
+	printf("%ld\n", mem(1));
 	printf("OP: %s operands: %s\n", OP, operands);
 	PC += 4;
+	temp[counter] = OP;
+	counter++;
 	if(strcmp(OP, "ADD") == 0)                     //ADD的範例已經寫好了，請依照此範例填滿下列九個指令 
     {             
 		sscanf(operands, "$%ld, $%ld, $%ld", &r_d, &r_s, &r_t);
@@ -218,9 +221,17 @@ void inst_func_simulation(char* inst){
 
 	if(strcmp(OP, "BEQ") == 0 || strcmp(OP, "BNE") == 0)
 	{
-		sscanf(operands, "$%ld, $%ld, %ld", &r_s, &r_t, &shamt);
-		if(reg(r_s) == reg(r_t) && shamt > 0) PC += shamt << 2;
-		if(reg(r_s) == reg(r_t) && shamt < 0) PC -= abs(shamt);
+		sscanf(operands, "$%ld, $%ld, %s", &r_s, &r_t, reg_dest);
+		if(reg_dest[0] - '0' > 10){
+			if(reg(r_s) == reg(r_t) && shamt > 0) PC += shamt;
+			if(reg(r_s) == reg(r_t) && shamt < 0) PC -= abs(shamt);
+		}
+		else{
+			char xy[30] = strcat(reg_dest, ':');
+			
+			reg_dest = xy;
+			for(x = 0; x < len(temp); x++) if(strcmp(temp[x], reg_dest) == 0) PC += ;
+		}
 		// sscanf(operands, "$%ld, $%ld, %s", &r_s, &r_t, reg_dest);
 
 		switch(DATAPATH_TYPE)

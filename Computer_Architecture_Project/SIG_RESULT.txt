@@ -1,21 +1,17 @@
 CPU cycle time:	100 ps
 Datapath type:	Multi-Cycle Datapath 
-Total # of CPU cycles:	24 
+Total # of CPU cycles:	15 
 Instruction Memory Contents: 
 Mem_Addr	Label	Instruction 
-0		Start		ADD	$0, $1, $2
+0		Start		ADD	$2,	$1,	$2
 
-4			SLL	$7,	$0,	3
+4		LOOP		SLL	$4,	$4,	1
 
-8			OR	$2,	$0,	$4
+8			ADD	$0,	$0,	$1
 
-12			SW	$0,	0($3)
+12			BNE	$0,	$2,	-12
 
-16			BEQ	$2,	$0,	4
-
-20			LW	$5,	40($7)
-
-24		Exit	
+16		Exit	
 
 Data Memory Contents: 
 Mem_Addr	Data 
@@ -24,11 +20,11 @@ Mem_Addr	Data
 88		10
 Register file contents: 
 Reg_ID	Data 
-0	3
+0	1
 1	1
-2	7
+2	3
 3	3
-4	4
-5	12
+4	8
+5	5
 6	6
-7	24
+7	7
