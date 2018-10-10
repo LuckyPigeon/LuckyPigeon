@@ -1,6 +1,8 @@
 # Lecture 1
 ## Git基礎流程練習
 * 關鍵字: hacktoberfest 2018
+* 報名至10/31
+* 送五個PR就可以得到hacktoberfest 2018上衣x1+很多github&digitalocean的小貼紙
 ![](https://hacktoberfest.digitalocean.com/assets/hacktoberfest-2018-social-card-c8d2e1489f647f2e0a26e6f598adeb760872818905b34cd437afc7ac2857ceab.png)
 ### 第一步
 #### 創建世界
