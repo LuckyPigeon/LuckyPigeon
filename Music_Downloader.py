@@ -23,9 +23,9 @@ def downloader(src_url, name, dirpath = './music_test/'):
 	return os.system('wget ' + src_url + ' -O ' + name)
 
 def OnlineConverter(yt_url):
-	driver = webdriver.PhantomJS()
+	driver = webdriver.PhantomJS(executable_path = '/d/phantomjs-2.1.1-windows/bin/phantomjs')
 	# driver = webdriver.Firefox()
-	'''
+	
 	driver.get('https://www.onlinevideoconverter.com/video-converter')
 	driver.find_element_by_id('texturl').send_keys('https://www.youtube.com' + yt_url)
 	driver.find_element_by_id('convert1').click()
@@ -35,7 +35,7 @@ def OnlineConverter(yt_url):
 	src_bsObj = BeautifulSoup(driver.page_source, 'html.parser')
 	driver.close()
 	src_url = re.findall(r'href="http://s.*?"', str(src_bsObj.findAll('a')))
-	'''
+	
 	src_url = re.sub(r'href="', '', src_url[0])
 	src_url = re.sub(r'"', '', src_url)
 
@@ -157,10 +157,10 @@ def kkbox_daily_new(target):
 	return song_name, artist_name, rankings
 
 def main():
-	'''
+	
 	song_type = input("新歌或單曲: ")
 	target = eval(input("請輸入要下載前幾名的歌曲: "))
-	'''
+	
 	strpath = input("請輸入下載的地址(0為沒有): ")
 	
 	target = 2
