@@ -1,0 +1,5 @@
+language: python
+python:
+    - 3.6.4
+script:
+    - /c/Users/user/Anaconda3/python.exe ./Git_Self_Learning/this-week/cal_test.py

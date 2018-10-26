@@ -1,5 +1,0 @@
-language: python
-python:
-    - 3.6.4
-script:
-    - /c/Users/user/Anaconda3/python.exe cal_test.py
