@@ -1,5 +1,0 @@
-language: python
-python:
-    - 3.6.4
-script:
-    - python ./Git_Self_Learning/this-week/cal_test.py
