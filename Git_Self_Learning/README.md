@@ -3,7 +3,7 @@
 * 第一週: Git (基本指令、log) 補充學習資源：GIT簡介
 * 第二週: Git (.git、gitignore)
 * 第三週: Git (conflict solving、sparse、checkout、squash&pick、rebase、stash、merge)
-* 第四週: Github overlook (from Gitbash and from Github WebGUI)
+* 第四週: Github and Gitlab overlook (from Gitbash and from WebGUI)
 * 第五週: Gitlab與實驗室團隊協作
 * 第六週: Commit & PR template、sourcetree
 * 第七週: Label、Branch
