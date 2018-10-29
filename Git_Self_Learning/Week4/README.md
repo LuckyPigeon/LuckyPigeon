@@ -1,13 +1,13 @@
 # Week 4
 ## Git Bash
 * LINUX環境上的執行指令環境叫做terminal，也有人稱Bash
-![](../image/bash+logo.png)
 * Bash介面
+![](../image/bash%20logo.png)
 ![](../image/bash.png)
 * 而專門執行Git指令並且局LINUX環境上的Bash就叫做GitBash
-![](../image/git+bash.jpg)
+![](../image/git%20bash.jpg)
 * Git Bash介面
-![](../image/gitbash+logo.png)
+&esnp![](../image/gitbash%20logo.png)
 ## Github & Gitlab
 * 環境
 * PR: 當在開源專案或是與認識的人一起開發時，解決一個問題的過程，可能會需要討論，或者在解決完時，還可能需要做其他更改，最重要的是，可以確認每個人做了多少事情。因為每個PR都需要開新的分支，因此能讓整個專案變得更穩定，也能讓人更去熟悉從開發到被merge的整個過程。
