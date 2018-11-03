@@ -28,3 +28,5 @@ set tw=72 換行
 # Source Tree
 * 對於一般喜愛方便或喜愛圖形介面的開發者或git 使用者，source tree所帶來的效益真的很強大!!!
 * 不過，當然的，如果是Geeks或hacker通常還是會喜歡暗暗的bash shell啦~
+* 一張圖片就告訴了全部常用git指令在哪裡了
+![](../image/sourcetree.png)
