@@ -4,11 +4,11 @@
 * 第二週: Git (.git、gitignore)
 * 第三週: Git (conflict solving、sparse、checkout、squash&pick、rebase、stash、merge)
 * 第四週: Github and Gitlab overlook (from Gitbash and from WebGUI)
-* 第五週: Gitlab與實驗室團隊協作
-* 第六週: Commit & PR template、sourcetree
-* 第七週: Label、Branch
+* 第五週: Gitlab與實驗室團隊協作、API、Swagger
+* 第六週: Commit & PR、ISSUE template、sourcetree
+* 第七週: Label、Branch、snapcraft、AppVeyor、ReadtheDocs
 * 第八週: Jupyter Notebook
-* 第九、十週: Unit Tests
+* 第九、十週: Unit Test、e2e test
 * 第十一週: JupyterHub 
 * 第十二、十三週: Makefile撰寫 (setup and CMake and Makefile)
 * 第十四、十五、十六週: CI (travis、coverall、gitlab、circleci、Jenkins)
