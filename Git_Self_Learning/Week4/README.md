@@ -22,3 +22,19 @@
 * CI/CD環境: Gitlab使用[Operation](https://docs.gitlab.com/ee/ci/environments.html)來檢視與管理部屬上server的程式，而Github在WebGUI介面檢視與臉部屬的程式碼，並且在travis上檢視部屬後的結果。
 ## Gitlab獨到之處
 * 在Gitlab裡面，你可以用[package](https://packagecloud.io/docs)介面的方式管理在Gitlab中使用到的package，還可以使用[Registry](https://gitlab.com/help/user/project/container_registry)管理docker image，視不同情況將對自己專案開發有幫助的package or docker image下載下來使用吧!
+## 期末專案討論
+* 兩種方案
+* 第一種: 開發cdnjs的issue
+  * 好處:
+  * 認識大大
+  * 參與大專案開發
+  * 增廣見聞
+* 第二種: 開發實驗室react_d3_chart
+  * 好處:
+  * 專案小，容易掌握
+  * 使用熟悉的reactjs
+  * 未來有益於學弟妹使用d3js
+* 第三種: 開發實驗室react_tree_bz
+  * 好處:
+  * 同上
+* 第二及第三種要看看未來哪一個部分(d3或是知識樹)學弟妹們比較有可能去發展
