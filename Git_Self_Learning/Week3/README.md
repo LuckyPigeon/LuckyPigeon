@@ -41,3 +41,10 @@
 6) 專案太大，整個複製下來太佔空間
   * 請看[cdnjs sparse](https://github.com/cdnjs/cdnjs/blob/master/documents/sparseCheckout.md)
   * 目前只有碰過cdnjs有這種需求，不過對於其他架構很複雜的專案也很好用就是了
+  * 用莫凡的tutorial來做為示範，我只抓取sklearn這個directory
+  * 289K v.s. 51M，差很多吧~
+  * 如果修改專案時只會用到特定的資料夾，這麼做還可以確保不會因為什麼相依性的問題，使得其他資料夾的資料無意間被更動了呢!
+  * 289K的sklearn directory
+  ![](../image/morvan.jpg)
+  * 51M的專案
+  ![](../image/tutorial.jpg)
