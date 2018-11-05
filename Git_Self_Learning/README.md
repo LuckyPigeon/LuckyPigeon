@@ -9,7 +9,7 @@
 * 第七週: Label、Branch、snapcraft、AppVeyor、ReadtheDocs
 * 第八週: Jupyter Notebook
 * 第九、十週: Unit Test、e2e test
-* 第十一週: JupyterHub 
+* 第十一週: JupyterHub、Docker、DockerHub
 * 第十二、十三週: Makefile撰寫 (setup and CMake and Makefile)
 * 第十四、十五、十六週: CI (travis、coverall、gitlab、circleci、Jenkins)
 * 第十七週: CD(travis、coverall、gitlab、circleci、Jenkins)
