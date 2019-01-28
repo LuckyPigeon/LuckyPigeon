@@ -59,3 +59,6 @@ services:
       delay: 10s
     restart_policy:
       condition: on-failure
+```
+* 寫完之後跑`$docker-compose up`，如果要build成image，加一個`--build`就可以了
+* 停止container使用`$docker-compose down`
