@@ -18,7 +18,7 @@
 * ADD -> 將檔案加入創建的image的跟目錄中
 * COPY -> 將檔案複製到創建的image的跟目錄中
 * WORKDIR -> 啟動這個image的時候所要工作的目錄，基本上等於你的`$cd ~`
-* RUN -> 需要執行的指令，注意這裡使用的每一個RUN都會創建一個新的環境，因此每一次都會回到工作目錄上，因此切記如果要`$RUN cd ./my-folder/`的話，
+* RUN -> 需要執行的指令，注意這裡使用的每一個RUN都會創建一個新的container，因此每一次都會回到工作目錄上，因此切記如果要`$RUN cd ./my-folder/`的話，
 cd之後要做的事情要用`&&`連起來呦~例如:`RUN cd ./my-folder && apt update`
 * EXPOSE -> 要部屬上去的port
 * ENV -> 環境變數，送給程式的外部變數
