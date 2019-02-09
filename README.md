@@ -2,6 +2,7 @@
 ## Todo list
 * 關鍵字查詢+各國語言分析 with scalajs
 * 論文爬蟲
+* 音樂
 * 流行音樂翻譯 with python
 * 日文VR with C#
 * KKPHD with kotlin(Android App) + .NET(Desktop App) + emberjs(Web App)
