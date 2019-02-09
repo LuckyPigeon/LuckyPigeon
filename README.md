@@ -2,6 +2,6 @@
 ## Todo list
 * 關鍵字查詢+各國語言分析
 * 論文爬蟲
-* KKPHD
-* KKAlarm
-* React framework gui editor
+* KKPHD with kotlin
+* KKAlarm with 
+* React framework gui editor with reactjs
