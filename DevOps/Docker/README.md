@@ -1,8 +1,8 @@
 # This folder contains docker documentation and sample code
 
 ## Directory tree
-* example - Docker example
-  |- Dockerfile
+* example - Docker example<br>
+  |- Dockerfile<br>
   |- docker-compose.yml
 * README.md - The folder structure and docker instruction
 
