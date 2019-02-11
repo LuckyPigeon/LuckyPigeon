@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapi-deployment
+  labels:
+    name: myapi-deployment
+    type: api
+spec:
+  replicas: 3
+  template:
+    metadata:
+      name: myapi-pod
+      labels:
+        name: myapi-pod
+        type: api
+    spec:
+      containers:
+        - name: cert-api
+          image: pigeon105321042/cert-api
+  selector:
+    matchLabels:
+      name: myapi-pod
+      type: api
