@@ -1,4 +1,4 @@
-![](https://cdn.vox-cdn.com/thumbor/fbrTLtxuP2D29o8VJUaE-u3NKfU=/0x0:792x613/1200x800/filters:focal(300x237:426x363)/cdn.vox-cdn.com/uploads/chorus_image/image/59850273/Docker_logo_011.0.png)
+![](https://farm2.staticflickr.com/1600/25660808075_f19d02bae1_o.png)
 # This folder contains docker documentation and sample code
 
 ## Directory tree
