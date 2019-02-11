@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapi-pod
+  labels:
+    name: myapi-pod
+    type: api
+spec:
+  containers:
+    - name: cert-api
+      image: pigeon105321042/cert-api
