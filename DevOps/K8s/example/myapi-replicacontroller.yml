@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: myapi-replicacontroller
+  labels:
+    name: myapi-replicacontroller
+    type: api
+spec:
+  replicas: 3
+  selector:
+    name: myapi-pod
+    type: api
+  template:
+    metadata:
+      name: myapi-pod
+      labels:
+        name: myapi-pod
+        type: api
+    spec:
+      containers:
+        - name: cert-api
+          image: pigeon105321042/cert-api
