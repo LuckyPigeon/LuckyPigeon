@@ -11,3 +11,7 @@
 * KKAlarm with kotlin(Android App) + .NET(Desktop App) + emberjs(Web App)
 * React framework gui editor with reactjs
 * Eval as a Service(blockchain) with golang
+* EvalGoal
+* map+reduce+filter dashboard
+* IOT 驗證系統
+* 驗證碼產生器
