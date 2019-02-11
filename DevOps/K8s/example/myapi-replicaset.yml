@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: myapi-replicaset
+  labels:
+    name: myapi-replicaset
+    type: api
+spec:
+  # modify replicas according to your case
+  replicas: 3
+  selector:
+    matchLabels:
+      name: myapi-pod.yml
+      type: api
+  template:
+    metadata:
+      labels:
+        name: myapi-pod.yml
+        type: api
+    spec:
+      containers:
+      - name: cert-api
+        image: pigeon105321042/cert-api
