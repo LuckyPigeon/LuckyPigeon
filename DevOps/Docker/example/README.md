@@ -1,4 +1,6 @@
 # This folder contains docker sample code
+
 # Directory tree
-* Dockerfile
-* docker-compose.yml
+* Dockerfile - Docker image configuration file
+* docker-compose.yml - Mutli image deployment configuration file
+* README.md - The folder structure
