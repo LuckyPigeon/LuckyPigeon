@@ -35,7 +35,7 @@ sudo systemctl restart kubelet
 # Create a single cluster with kubeadm
 sudo kubeadm init --pod-network-cidr=10.244.0.0/16 --apiserver-advertise-address=<ip-address>
 
-# ` kubeadm join <master-ip>:<master-port> --token <token> --discovery-token-ca-cert-hash sha256:<hash>`
+# kubeadm join <master-ip>:<master-port> --token <token> --discovery-token-ca-cert-hash sha256:<hash>
 # Above will pop out after do kubeadm init, keep that in somewhere, you can add other cluster with
 # the command
 
