@@ -68,6 +68,14 @@ minikube start
 minikube dashboard
 ```
 
+### K8s network
+* K8s's network will autometically assign a internal ip address to each node
+* Here are the recommendations:
+  * VMware environment -> NSX-T
+  * K8s-labs use -> weave net
+  * Your own scratch system -> you can choose whatever you like, but recommend flannel
+  * K8s has a built-in network -> Kube-router
+
 ### Kubectl instructions
 ```sh
 # Add --all at the end of command -> get all from current namespace
