@@ -67,3 +67,49 @@ sudo cp minikube /usr/local/bin && rm minikube
 minikube start
 minikube dashboard
 ```
+
+### Kubectl instructions
+```sh
+# Add --all at the end of command -> get all from current namespace
+# Add --all-namespaces at the end of command -> get all from all namespaces
+# For example: kubectl get pods --all and kubectl get pods --all-namespaces
+# Get all active pods
+kubectl get pods
+
+# Get all active replicaset
+kubectl get replicasets
+
+# Get all active deployment
+kubectl get deployments
+
+# Get all active service
+kubectl get services
+
+# Create new pod/replicaset/deployment/service from file
+kubectl create -f <file-name>
+
+# Delete pod/replicaset/deployment/service from file
+kubectl delete -f <file-name>
+
+# Want to change any configuration of file in command line not from file
+kubectl set deployment/<the-deployment-name> <what-do-you-want-to-change>
+
+# Want to change any configuration of deployment after changed the file
+kubectl apply -f <deployment-file-name>
+kubectl rollout status deployment/<the-deployment-name>
+
+# Check rollout history
+kubectl rollout history deployment/<the-deployment-name>
+
+# Want to unchange any configuration of deployment
+kubectl rollout undo deployment/<the-deployment-name>
+
+# Want to unchange any configuration to a specific revision
+kubectl rollout undo deployment/<the-deployment-name> --to-revision=<number>
+
+# Want to change the scaling replicas
+kubectl scale deployment/<the-deployment-name> --replicas=<number>
+
+# Want to change the deployment scaling to autoscaling
+kubectl autoscale deployment/<the-deployment-name> --min=<number1> --max=<number2> --cpu-percent=<number3>
+```
