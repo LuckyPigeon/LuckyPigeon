@@ -1,11 +1,10 @@
-# FROM ubuntu:18.04
-FROM alpine
+FROM ubuntu:18.04
 
 ADD . /
 
 WORKDIR /cert-api/
 
-RUN apk update && apk add nodejs npm git python make g++
+RUN apt update && apt install nodejs npm git
 RUN npm install && npm link ../cert-contract ../common
 
 EXPOSE 3000
