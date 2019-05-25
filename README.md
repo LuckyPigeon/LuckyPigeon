@@ -7,7 +7,7 @@
 * 食譜系統 with php
 * 電影系統 with ruby
 * 流行音樂翻譯 with python
-* 日文VR with C#
+* 日文VR with AR
 * KKPHD with kotlin (Android App) + .NET (Desktop App) + vuejs (Web App)
 * KKAlarm with kotlin (Android App) + .NET (Desktop App) + vuejs (Web App)
 * React framework gui editor with reactjs
