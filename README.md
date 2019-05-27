@@ -4,9 +4,9 @@
 * 關鍵字查詢 + 各國語言分析 with scalajs
 * 論文爬蟲 with vuejs
 * 音樂視覺化 with vuejs
-* 食譜系統 with php
-* 電影系統 with ruby
-* 流行音樂翻譯 with python
+* 食譜系統 with angular + laravel
+* 電影系統 with emberjs + rails
+* 流行音樂翻譯 with angular + django
 * 日文VR with AR
 * KKPHD with kotlin (Android App) + .NET (Desktop App) + vuejs (Web App)
 * KKAlarm with kotlin (Android App) + .NET (Desktop App) + vuejs (Web App)
