@@ -126,3 +126,7 @@ $ kubectl scale deployment/<the-deployment-name> --replicas=<number>
 # Want to change the deployment scaling to autoscaling
 $ kubectl autoscale deployment/<the-deployment-name> --min=<number1> --max=<number2> --cpu-percent=<number3>
 ```
+
+### Trouble Shooting
+* 0/1 nodes are available: 1 node(s) had taints that the pod didn't tolerate.
+`$ kubectl taint nodes --all node-role.kubernetes.io/master-`
