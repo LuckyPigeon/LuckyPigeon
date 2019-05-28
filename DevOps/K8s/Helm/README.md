@@ -67,3 +67,24 @@ $ helm init --service-account tiller --skip-refresh
 $ kubectl get pod -n kube-system -l app=helm # Get tiller pod
 $ helm version # Get helm's verion
 ```
+## Use helm to deploy nginx ingress
+* Ingress is one of k8s resources, and a way to deploy k8s cluster to outside.
+* Helm is compose by Ingress & Ingress Controller
+* There's a lot of Ingress Controller, such as Nginx, HAProxy, Traefik ... etc.
+### Search nginx-ingress library
+```sh
+$ helm search nginx-ingress
+```
+### Use helm to deploy Nginx Ingress Controller
+* There are two ways
+  * hostNetwork `controller.hostNetwork=true`
+  * exteralIP (recommend)
+  `$ helm install --name nginx-ingress --set "rbac.create=true,controller.service.externalIPs[0]=192.168.10.123,controller.service.externalIPs[1]=192.168.10.124,controller.service.externalIPs[2]=192.168.10.125" stable/nginx-ingress # Activate rbac support`
+### Get service
+```sh
+$ kubectl get service
+```
+## Access Nignx Ingress Controller
+```sh
+$ kubectl --namespace default get services -o wide -w nginx-ingress-controller # Use this to get externalip
+```
