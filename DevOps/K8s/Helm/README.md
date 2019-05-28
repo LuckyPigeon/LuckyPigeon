@@ -52,5 +52,12 @@ subjects:
 ```
 * Create tiller
 ```sh
+$ sudo swapoff -a
 $ kubectl create -f rbac-config.yaml
+```
+## Use helm with minikube
+* We can avoid `Error: Get http://localhost:8080/version: dial tcp 127.0.0.1:8080: connect: connection refused` by using minikube as following
+```sh
+$ sudo swapoff -a
+$ minikube start
 ```
