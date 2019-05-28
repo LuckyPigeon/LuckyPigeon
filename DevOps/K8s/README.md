@@ -39,6 +39,11 @@ sudo kubeadm init --pod-network-cidr=10.244.0.0/16 --apiserver-advertise-address
 # Above will pop out after do kubeadm init, keep that in somewhere, you can add other cluster with
 # the command
 
+# We might encounter "Get http://localhost:8080/api?timeout=32s: dial tcp 127.0.0.1:8080: connect: connection refused", then do the following
+mkdir -p $HOME/.kube
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
 # Set kube flannel network to pass bridged IPv4 traffic to iptables’ chains
 sudo sysctl net.bridge.bridge-nf-call-iptables=1
 
