@@ -61,3 +61,9 @@ $ kubectl create -f rbac-config.yaml
 $ sudo swapoff -a
 $ minikube start
 ```
+## Use helm to deploy tiller
+```sh
+$ helm init --service-account tiller --skip-refresh
+$ kubectl get pod -n kube-system -l app=helm # Get tiller pod
+$ helm version # Get helm's verion
+```
