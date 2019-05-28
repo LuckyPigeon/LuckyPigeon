@@ -16,6 +16,7 @@
 * docker run <docker-image> -> 執行docker image，如果沒有該image，會從dockerhub自動拉一個下來
 
 #### container相關(container為執行中的image，每run一個image就會創建一個新的container
+* Your container ip will land at 172.17.0.2:{ip}
 * docker exec -i <container-id> -> 執行一個特定container
 * docker start <container-id> -> 重新啟動一個特定的container
 * docker stop <container-id> -> 停止一個特定的container
