@@ -79,9 +79,10 @@ $ helm search nginx-ingress
   * hostNetwork `controller.hostNetwork=true`
   * exteralIP (recommend)
   `$ helm install --name nginx-ingress --set "rbac.create=true,controller.service.externalIPs[0]=192.168.10.123,controller.service.externalIPs[1]=192.168.10.124,controller.service.externalIPs[2]=192.168.10.125" stable/nginx-ingress # Activate rbac support`
-### Get service
+### Get service & ingress
 ```sh
-$ kubectl get service
+$ kubectl get service # Check service has been set up
+$ kubectl get ingress # Check ingress has been set up
 ```
 ## Access Nignx Ingress Controller
 ```sh
