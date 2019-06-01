@@ -8,8 +8,8 @@
 * 電影系統 with emberjs + rails
 * 流行音樂翻譯 with angular + django
 * 日文VR with AR
-* KKPHD with kotlin (Android App) + .NET (Desktop App) + vuejs (Web App)
-* KKAlarm with kotlin (Android App) + .NET (Desktop App) + vuejs (Web App)
+* KKPHD with kotlin (Android App) + .NET (Desktop App) + vuejs (Web App) + flask (api) + sqlite
+* KKAlarm with kotlin (Android App) + .NET (Desktop App) + vuejs (Web App) + flask (api) + sqlite
 * React framework gui editor with reactjs + rails + sqlite
 * Eval as a Service (blockchain) with golang + solidity + nestjs + mysql
 * EvalGoal with reactjs + rails + sqlite
