@@ -10,7 +10,6 @@ $ mkdir -p $HOME/.kube
 $ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 $ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```
-<br>
 Reason: Set up a k8s configuration file manually
 ## Error: VERR_VM_DRIVER_INSTALLED-The support driver is not installed. On linux, open returned ENOENT (Minikube setup error)
 ### Solution
