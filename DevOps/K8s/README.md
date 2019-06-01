@@ -128,5 +128,5 @@ $ kubectl autoscale deployment/<the-deployment-name> --min=<number1> --max=<numb
 ```
 
 ### Trouble Shooting
-* Q: 0/1 nodes are available: 1 node(s) had taints that the pod didn't tolerate.<br>
+* Q: 0/1 nodes are available: 1 node(s) had taints that the pod didn't tolerate (Pod always stays pending).<br>
 A: `$ kubectl taint nodes --all node-role.kubernetes.io/master-`
