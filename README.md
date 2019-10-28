@@ -15,3 +15,4 @@
 * 驗證碼產生器
 * Project Manager (先以 I3S, Dublin Core, Data Jacket 為構想) with angular + django + postgres
 * Web 聊天機器人 (Extract Web DOM and Infer the DB Structure 先以 I3S, Dublin Core, Data Jacket 為構想) with reactjs + rails + sqlite
+* Meetup Recommendation System (MRS) with reactjs + nestjs + postgres
